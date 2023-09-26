@@ -1,1 +1,0 @@
-Tits are beautiful birds.

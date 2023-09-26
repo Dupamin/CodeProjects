@@ -1,2 +1,0 @@
-Dogecoins: 3; Money: 1; Survived: 9; Date: 19-12-2021
-Dogecoins: 72; Money: 910; Survived: 220; Date: 20-12-2021
