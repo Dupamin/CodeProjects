@@ -956,10 +956,11 @@ while 1:
             soul_hug_timer = 0
             hp_timer = 0
             chad_timer = 0
-            if shop_item_add_surv.bought:
-                survived = 60
-            else:
-                survived = 0
+            survived = 60 if shop_item_add_surv.bought else 0
+            # if shop_item_add_surv.bought:
+            #     survived = 60
+            # else:
+            #     survived = 0
             continue
         rand_vel_x = rand_vel_y = 0
 
