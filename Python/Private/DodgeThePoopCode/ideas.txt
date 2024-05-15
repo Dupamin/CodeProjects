@@ -1,0 +1,44 @@
+things to do:
+		#when hit, display "got hit" doge image, img blink and 1 second of invulnerability
+		#doge takes dogecoin - display doge_chad.png
+		#blue hugs - 4th heart
+        #the longer you play, the higher value dogecoins will accumulate -> have dogecoins + dollars, dogecoin pickup adds 1 to the wallet, holding it increases dollar value incrementally
+	    #save state - text file
+	item shop - #icons, #text, #correct position, #functions, #fucking warpText, #save bought item into file - we need to have the save file work around self.bought
+	    ideas:  increase money given by dogecoins in game
+	            ability to play the game with mouse
+	            # start further in the game
+	    #pause game
+	audio:  #background (maybe change up where the doom music starts - or how smb transforms into it)
+	        #sound effects
+	        X sound mute button
+	        # music mute button
+	    #Oogway wisdom
+	    #fire around the screen
+	    #create save files if not existing
+	    #leaderboards
+	    #reset game button
+	    #multiple playable characters
+	        #buy Jarek
+	    #paper falls on you from above instead of having so much poop flying at you at the 150s
+	    #reduce the time before doom starts playing (now it takes too long to get there)
+	    #fix the game not saving properly bug
+	    X game tells you that its monthly closing at 90 second mark
+	    #music starts playing a bit too late
+	X time starts from 7:00, survive until 9:00 (brake time) - open shop for 15 seconds (maybe days instead of hours)
+	X lunch time - shoot food at doge (fill hearts)
+	    #spinning poop
+	X add koreans to the side of the screen throwing poop instead of poop_xy being randomly generated (also make screen bigger)
+	X progression - collect dogecoins to buy some upgrades for doge (ideas: start with more HP, user adjustable speed, etc.)
+
+	X remake the whole game into a more pixelated look (e.g. hearts)
+
+
+things to maybe do:
+    spawn things that make you smaller and bigger (to have something to not pickup for few seconds)
+	sometimes shoot cheems.png instead of poop :D
+	color doge rainbow when he picks up shield
+	make animations for Koreans
+	make boss fights (:O)
+	remake the game code structure into a more def based code (less code in "main")
+	if I ever come back to this, make replays (plays a replay of your play)

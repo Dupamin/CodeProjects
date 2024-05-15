@@ -1,0 +1,13 @@
+Money = 26
+Dogecoins = 12
+TotalPlaytime = 37
+it_shop_soulheart = False
+it_shop_add_surv = False
+it_shop_jarek = False
+it_shop_ph3 = False
+it_shop_ph4 = False
+it_shop_ph5 = False
+it_shop_ph6 = False
+it_shop_ph7 = False
+doge_chosen = True
+jarek_chosen = False
