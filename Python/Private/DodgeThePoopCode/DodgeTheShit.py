@@ -20,39 +20,39 @@ mixer.music.set_volume(1)
 curr_dir = os.path.dirname(os.path.abspath("__init__.py"))
 
 # sounds - S = Sound
-SBackButton = mixer.Sound("Sounds\BackButton.wav")  # used
-SButton = mixer.Sound("Sounds\Button.wav")  # used
-SBeforeMC = [mixer.Sound("Sounds\BeforeMC1.wav"),  # used
-             mixer.Sound("Sounds\BeforeMC2.wav")]  # used
-SBGMusicMe = mixer.Sound("Sounds\BGMusicMe.wav")  # used
-SCoinPickup = mixer.Sound("Sounds\CoinPickup.wav")  # used
-SHugPickup = mixer.Sound("Sounds\HugPickup.wav")  # used
-SSoulHugPickup = mixer.Sound("Sounds\SoulHugPickup.wav")  # used
-SCoSiDam = mixer.Sound("Sounds\CoSiDam.wav")  # used
-SGothit = [mixer.Sound("Sounds\Gothit1.wav"),  # used
-           mixer.Sound("Sounds\Gothit2.wav"),  # used
-           mixer.Sound("Sounds\Gothit3.wav"),  # used
-           mixer.Sound("Sounds\Gothit4.wav"),  # used
-           mixer.Sound("Sounds\Gothit5.wav"),  # used
-           mixer.Sound("Sounds\Gothit6.wav")]  # used
-SGothitMC = [mixer.Sound("Sounds\GothitMC1.wav"),  # used
-             mixer.Sound("Sounds\GothitMC2.wav"),  # used
-             mixer.Sound("Sounds\GothitMC3.wav")]  # used
-SCharChooseDoge = mixer.Sound("Sounds\CharChooseDoge.wav")  # used
-SCharChooseJarek = [mixer.Sound("Sounds\CharChooseJarek1.wav"),  # used
-                    mixer.Sound("Sounds\CharChooseJarek2.wav"),  # used
-                    mixer.Sound("Sounds\CharChooseJarek3.wav"),  # used
-                    mixer.Sound("Sounds\CharChooseJarek4.wav")]  # used
-SChooseProduct = mixer.Sound("Sounds\ChooseProduct1.wav")  # used
+SBackButton = mixer.Sound(r"Sounds\BackButton.wav")  # used
+SButton = mixer.Sound(r"Sounds\Button.wav")  # used
+SBeforeMC = [mixer.Sound(r"Sounds\BeforeMC1.wav"),  # used
+             mixer.Sound(r"Sounds\BeforeMC2.wav")]  # used
+SBGMusicMe = mixer.Sound(r"Sounds\BGMusicMe.wav")  # used
+SCoinPickup = mixer.Sound(r"Sounds\CoinPickup.wav")  # used
+SHugPickup = mixer.Sound(r"Sounds\HugPickup.wav")  # used
+SSoulHugPickup = mixer.Sound(r"Sounds\SoulHugPickup.wav")  # used
+SCoSiDam = mixer.Sound(r"Sounds\CoSiDam.wav")  # used
+SGothit = [mixer.Sound(r"Sounds\Gothit1.wav"),  # used
+           mixer.Sound(r"Sounds\Gothit2.wav"),  # used
+           mixer.Sound(r"Sounds\Gothit3.wav"),  # used
+           mixer.Sound(r"Sounds\Gothit4.wav"),  # used
+           mixer.Sound(r"Sounds\Gothit5.wav"),  # used
+           mixer.Sound(r"Sounds\Gothit6.wav")]  # used
+SGothitMC = [mixer.Sound(r"Sounds\GothitMC1.wav"),  # used
+             mixer.Sound(r"Sounds\GothitMC2.wav"),  # used
+             mixer.Sound(r"Sounds\GothitMC3.wav")]  # used
+SCharChooseDoge = mixer.Sound(r"Sounds\CharChooseDoge.wav")  # used
+SCharChooseJarek = [mixer.Sound(r"Sounds\CharChooseJarek1.wav"),  # used
+                    mixer.Sound(r"Sounds\CharChooseJarek2.wav"),  # used
+                    mixer.Sound(r"Sounds\CharChooseJarek3.wav"),  # used
+                    mixer.Sound(r"Sounds\CharChooseJarek4.wav")]  # used
+SChooseProduct = mixer.Sound(r"Sounds\ChooseProduct1.wav")  # used
 # mixer.Sound("Sounds\ChooseProduct2.wav"),
 # mixer.Sound("Sounds\ChooseProduct3.wav")]
-SChooseProductThanks = mixer.Sound("Sounds\ChooseProductThanks.wav")  # used
-SMyStudents = [mixer.Sound("Sounds\MyStudents1.wav"),  # used
-               mixer.Sound("Sounds\MyStudents2.wav"),  # used
-               mixer.Sound("Sounds\MyStudents3.wav"),  # used
-               mixer.Sound("Sounds\MyStudents4.wav")]  # used
-SScoreMenu = mixer.Sound("Sounds\ScoreMenu.wav")  # used
-SShopEntry = mixer.Sound("Sounds\ShopEntry.wav")  # used
+SChooseProductThanks = mixer.Sound(r"Sounds\ChooseProductThanks.wav")  # used
+SMyStudents = [mixer.Sound(r"Sounds\MyStudents1.wav"),  # used
+               mixer.Sound(r"Sounds\MyStudents2.wav"),  # used
+               mixer.Sound(r"Sounds\MyStudents3.wav"),  # used
+               mixer.Sound(r"Sounds\MyStudents4.wav")]  # used
+SScoreMenu = mixer.Sound(r"Sounds\ScoreMenu.wav")  # used
+SShopEntry = mixer.Sound(r"Sounds\ShopEntry.wav")  # used
 
 # default game variables
 window_size = screen_width, screen_height = 800, 533
@@ -76,10 +76,10 @@ red_scheme = ((222, 31, 18), (176, 25, 14), (105, 15, 8))
 grey_scheme = ((50, 50, 50), (30, 30, 30), (30, 30, 30))
 
 # backgrounds
-game_bg = pygame.image.load("Gamefiles\caltex.jpg")
-game_hell_bg = pygame.image.load("Gamefiles\caltex_hell.jpg")
-menu_bg = pygame.image.load("Gamefiles\caltexmenu.jpg")
-shop_bg = pygame.image.load("Gamefiles\shop.png")
+game_bg = pygame.image.load(r"Gamefiles\caltex.jpg")
+game_hell_bg = pygame.image.load(r"Gamefiles\caltex_hell.jpg")
+menu_bg = pygame.image.load(r"Gamefiles\caltexmenu.jpg")
+shop_bg = pygame.image.load(r"Gamefiles\shop.png")
 
 # background images
 fire_low_img = [pygame.image.load(r"Gamefiles\fire_low_1.png"), pygame.image.load(r"Gamefiles\fire_low_2.png"),
@@ -87,46 +87,46 @@ fire_low_img = [pygame.image.load(r"Gamefiles\fire_low_1.png"), pygame.image.loa
 
 # player and player related images
 # doge
-doge_walkright_img = [pygame.image.load("Gamefiles\doge_lookingright.png"),
-                      pygame.image.load("Gamefiles\doge_lookingatyou_right.png"),
-                      pygame.image.load("Gamefiles\ohmygod_transparent_smol.png")]
-doge_walkleft_img = [pygame.image.load("Gamefiles\doge_lookingleft.png"),
-                     pygame.image.load("Gamefiles\doge_lookingatyou_left.png"),
-                     pygame.image.load("Gamefiles\ohmygod_transparent_smol.png")]
-doge_hit_img = [pygame.image.load("Gamefiles\doge_gothit.png"), pygame.image.load("Gamefiles\doge_gothit2.png")]
-doge_chad_img = pygame.image.load("Gamefiles\doge_ischad.png")
+doge_walkright_img = [pygame.image.load(r"Gamefiles\doge_lookingright.png"),
+                      pygame.image.load(r"Gamefiles\doge_lookingatyou_right.png"),
+                      pygame.image.load(r"Gamefiles\ohmygod_transparent_smol.png")]
+doge_walkleft_img = [pygame.image.load(r"Gamefiles\doge_lookingleft.png"),
+                     pygame.image.load(r"Gamefiles\doge_lookingatyou_left.png"),
+                     pygame.image.load(r"Gamefiles\ohmygod_transparent_smol.png")]
+doge_hit_img = [pygame.image.load(r"Gamefiles\doge_gothit.png"), pygame.image.load(r"Gamefiles\doge_gothit2.png")]
+doge_chad_img = pygame.image.load(r"Gamefiles\doge_ischad.png")
 # jarek
-jarek_walkright_img = [pygame.image.load("Gamefiles\jarek_walks.png"), pygame.image.load("Gamefiles\jarek_stands.png"),
-                       pygame.image.load("Gamefiles\jarek_default.png")]
-jarek_walkleft_img = [pygame.transform.flip(pygame.image.load("Gamefiles\jarek_walks.png"), True, False),
-                      pygame.transform.flip(pygame.image.load("Gamefiles\jarek_stands.png"), True, False),
-                      pygame.image.load("Gamefiles\jarek_default.png")]
-jarek_hit_img = [pygame.image.load("Gamefiles\jarek_gothit.png"), pygame.image.load("Gamefiles\jarek_gothit2.png")]
-jarek_chad_img = pygame.transform.flip(pygame.image.load("Gamefiles\jarek_smooch.png"), True, False)
+jarek_walkright_img = [pygame.image.load(r"Gamefiles\jarek_walks.png"), pygame.image.load(r"Gamefiles\jarek_stands.png"),
+                       pygame.image.load(r"Gamefiles\jarek_default.png")]
+jarek_walkleft_img = [pygame.transform.flip(pygame.image.load(r"Gamefiles\jarek_walks.png"), True, False),
+                      pygame.transform.flip(pygame.image.load(r"Gamefiles\jarek_stands.png"), True, False),
+                      pygame.image.load(r"Gamefiles\jarek_default.png")]
+jarek_hit_img = [pygame.image.load(r"Gamefiles\jarek_gothit.png"), pygame.image.load(r"Gamefiles\jarek_gothit2.png")]
+jarek_chad_img = pygame.transform.flip(pygame.image.load(r"Gamefiles\jarek_smooch.png"), True, False)
 # other
 hearts_img = [pygame.image.load(r"Gamefiles\blank_heart.png"), pygame.image.load(r"Gamefiles\blank_heart.png"),
               pygame.image.load(r"Gamefiles\blank_heart.png"), pygame.image.load(r"Gamefiles\full_heart.png"),
               pygame.image.load(r"Gamefiles\full_heart.png"), pygame.image.load(r"Gamefiles\full_heart.png")]
-soul_heart_img = pygame.image.load("Gamefiles\soul_heart.png")  # also shop image
+soul_heart_img = pygame.image.load(r"Gamefiles\soul_heart.png")  # also shop image
 
 # enemies images
-poop_img = pygame.image.load("Gamefiles\poop.png")
-paper_img = pygame.image.load("Gamefiles\papers.png")
+poop_img = pygame.image.load(r"Gamefiles\poop.png")
+paper_img = pygame.image.load(r"Gamefiles\papers.png")
 
 # currency images
-dogecoin_img = pygame.image.load("Gamefiles\dogecoin.png")
-czk_img = pygame.image.load("Gamefiles\stokorun.png")
+dogecoin_img = pygame.image.load(r"Gamefiles\dogecoin.png")
+czk_img = pygame.image.load(r"Gamefiles\stokorun.png")
 
 # pickupable images
-hug_img = pygame.image.load("Gamefiles\hug.png")
-soul_hug_img = pygame.image.load("Gamefiles\soul_hug.png")
+hug_img = pygame.image.load(r"Gamefiles\hug.png")
+soul_hug_img = pygame.image.load(r"Gamefiles\soul_hug.png")
 
 # shop images
-add_surv_img = pygame.image.load("Gamefiles\plus_surv.png")
+add_surv_img = pygame.image.load(r"Gamefiles\plus_surv.png")
 
 # other random shit images
 placeholder_img = pygame.image.load(r"Gamefiles\borealis_logo.png")
-oogway_img = pygame.image.load("Gamefiles\MrOogway.png")
+oogway_img = pygame.image.load(r"Gamefiles\MrOogway.png")
 
 warning_true = False  # bool to ask if I want hard reset
 rand01 = 0
@@ -915,7 +915,7 @@ while 1:
     if game_played:
         pygame.mouse.set_visible(False)
         if not mixer.music.get_busy() and survived < 70:
-            mixer.music.load("Sounds\smb_overworld.mp3")
+            mixer.music.load(r"Sounds\smb_overworld.mp3")
             mixer.music.play()
         elif mixer.music.get_busy() and 70 < survived < 75:
             mixer.music.fadeout(10000)
@@ -923,7 +923,7 @@ while 1:
                 mixer.Channel(1).play(SBeforeMC[0])
                 mixer.Channel(1).queue(SBeforeMC[1])
         if not mixer.music.get_busy() and survived >= 80.8:
-            mixer.music.load("Sounds\doom_long.mp3")
+            mixer.music.load(r"Sounds\doom_long.mp3")
             mixer.music.play()
         if survived > 90:
             score_color = "white"
@@ -1219,7 +1219,7 @@ while 1:
             pygame.mouse.set_visible(True)
         if not mixer.music.get_busy():
             if randint(0, 9) == 0:
-                mixer.music.load("Sounds\BGMusicMe.wav")
+                mixer.music.load(r"Sounds\BGMusicMe.wav")
                 mixer.music.play()
             else:
                 mixer.music.load(r"Sounds\flower_garden.mp3")
@@ -1267,3 +1267,5 @@ while 1:
         fire_i += 1
         if fire_i >= 40:
             fire_i = 0
+
+sys.stdout.close()

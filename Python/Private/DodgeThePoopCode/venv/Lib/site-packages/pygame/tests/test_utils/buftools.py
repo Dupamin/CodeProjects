@@ -3,8 +3,8 @@
 Export the Exporter and Importer classes.
 
 Class Exporter has configurable shape and strides. Exporter objects
-provide a convient target for unit tests on Pygame objects and functions that
-import a new buffer interface.
+provide a convenient target for unit tests on Pygame objects and functions
+that import a new buffer interface.
 
 Class Importer imports a buffer interface with the given PyBUF_* flags.
 It returns NULL Py_buffer fields as None. The shape, strides, and suboffsets
@@ -19,6 +19,7 @@ can be run with the following command line statement:
 python -m pygame.tests.test_utils.array
 
 """
+
 import pygame
 
 if not pygame.HAVE_NEWBUF:
@@ -46,14 +47,9 @@ from pygame.newbuffer import (
 )
 
 import unittest
-import sys
 import ctypes
 import operator
-
-try:
-    reduce
-except NameError:
-    from functools import reduce
+from functools import reduce
 
 __all__ = ["Exporter", "Importer"]
 
@@ -80,7 +76,7 @@ def _prop_get(fn):
 class Exporter(pygame.newbuffer.BufferMixin):
     """An object that exports a multi-dimension new buffer interface
 
-       The only array operation this type supports is to export a buffer.
+    The only array operation this type supports is to export a buffer.
     """
 
     prefixes = {
@@ -188,10 +184,10 @@ class Exporter(pygame.newbuffer.BufferMixin):
         self.buf = ctypes.addressof(self._buf) + offset
 
     def buffer_info(self):
-        return (addressof(self.buffer), self.shape[0])
+        return (ctypes.addressof(self.buffer), self.shape[0])
 
     def tobytes(self):
-        return cast(self.buffer, POINTER(c_char))[0 : self._len]
+        return ctypes.cast(self.buffer, ctypes.POINTER(ctypes.c_char))[0 : self._len]
 
     def __len__(self):
         return self.shape[0]
@@ -230,9 +226,7 @@ class Exporter(pygame.newbuffer.BufferMixin):
         elif self.is_contiguous("C"):
             view.shape = None
         else:
-            raise BufferError(
-                "shape required for {} dimensional data".format(self.ndim)
-            )
+            raise BufferError(f"shape required for {self.ndim} dimensional data")
         if (flags & PyBUF_STRIDES) == PyBUF_STRIDES:
             view.strides = ctypes.addressof(self._strides)
         elif view.shape is None or self.is_contiguous("C"):
@@ -261,11 +255,11 @@ class Exporter(pygame.newbuffer.BufferMixin):
         return False
 
 
-class Importer(object):
+class Importer:
     """An object that imports a new buffer interface
 
-       The fields of the Py_buffer C struct are exposed by identically
-       named Importer read-only properties.
+    The fields of the Py_buffer C struct are exposed by identically
+    named Importer read-only properties.
     """
 
     def __init__(self, obj, flags):
